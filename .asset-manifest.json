@@ -12,8 +12,8 @@
     },
     "android/assets/banner.png": {
       "path": "android/assets/banner.png",
-      "sha256": "VZzC2Inesl7twwzOXLRErWo5Eh7mdsPWx8AABc4LO4s=",
-      "uri": "https://arweave.net/pD3ebTsCHNoZBYeS-8wzpcH_yD2ngWZI0F9JTe4Uo4A"
+      "sha256": "SFT9mmxQYQlq7H258ypFqmxY+pf3sPXnezGPNmfW2Ls=",
+      "uri": "https://arweave.net/pzwuN9oReyI-V_TTJpD3DIcIaH0pOctbwvTkxD6zR00"
     },
     "android/assets/screenshot-1.png": {
       "path": "android/assets/screenshot-1.png",
@@ -34,6 +34,36 @@
       "path": "android/assets/screenshot-4.png",
       "sha256": "lLaq4OwfiqFMJDr3Hp01LZAkL1kPW0kRsUNG1rWCcdU=",
       "uri": "https://arweave.net/KsaW2Lp37vVCB8VpQJgIpCr3hZbHYRnvjKUtKWPyttg"
+    },
+    "android/RetireOnSol-v2.0.3.apk": {
+      "path": "android/RetireOnSol-v2.0.3.apk",
+      "sha256": "2NdRCnFIpHUocXLoOqCUDfGffye+OHch5tMzLT96MGA=",
+      "uri": "https://arweave.net/nmeaT5xFc7M6wwGnMRlrg7-enSgCEVypmfwuq4OT7Nw"
+    },
+    "android/assets/promo-1-grow.png": {
+      "path": "android/assets/promo-1-grow.png",
+      "sha256": "3IlybZfTJw9uUHThvKNNwARJVxc8p3kAkizBcUK4Yhw=",
+      "uri": "https://arweave.net/0Cgob5Lqc36wWt5ex7bPkuKn20QomAagOXFcbHiSVZ4"
+    },
+    "android/assets/promo-2-results.png": {
+      "path": "android/assets/promo-2-results.png",
+      "sha256": "nb0iWn3JO8/kjzqDfezA7esiU2UDyk21pMV4SRom+iE=",
+      "uri": "https://arweave.net/F5wrS2onGbJDDgtJluq8TSRrWxtxROCt9sQky-w1uLo"
+    },
+    "android/assets/promo-3-spend.png": {
+      "path": "android/assets/promo-3-spend.png",
+      "sha256": "lt+a0FPLy7974GGBVUmhPg9wyvO4Zye2tOFRXpweHvQ=",
+      "uri": "https://arweave.net/IcMI_h_S37yfwB9T3RRVO5Amm1YFSeZ5JE7Wh9Jx5TY"
+    },
+    "android/assets/promo-4-drawdown.png": {
+      "path": "android/assets/promo-4-drawdown.png",
+      "sha256": "jGjr8uvX4ps2bxDCHaXdphIv2ls7SihY6e/zBVCBSac=",
+      "uri": "https://arweave.net/3HQ5APxUBGYqDFdI0_NtwItDjmZQbXLnswuN526VhR0"
+    },
+    "android/RetireOnSol-v2.0.4.apk": {
+      "path": "android/RetireOnSol-v2.0.4.apk",
+      "sha256": "Te6+ol6mDffP5C2cewkeyrmaUGhbfRrlFh3oSZ2wUcY=",
+      "uri": "https://arweave.net/_4Y5i-U5n1LcF7gEEdLn6SRyabjIXnim9VBJpYUNwVg"
     }
   }
 }

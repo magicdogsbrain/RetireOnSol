@@ -16,7 +16,7 @@ app:
     - purpose: icon
       uri: android/assets/icon-512.png
 release:
-  address: 2wbJeFxLk2mycx5aixwS34XZPb8hnLSDaFYFVaGjhWYT
+  address: CrGs9eN3JyUC8VhSeXJNxu4PgpjC3u4QcsoPUF3LfoTd
   media:
     - purpose: icon
       uri: android/assets/icon-512.png
@@ -32,7 +32,7 @@ release:
       uri: android/assets/promo-4-drawdown.png
   files:
     - purpose: install
-      uri: android/RetireOnSol-v2.0.3.apk
+      uri: android/RetireOnSol-v2.0.4.apk
   catalog:
     en-US:
       name: RetireOnSol
@@ -43,16 +43,16 @@ release:
   android_details:
     cert_fingerprint: 3bd5b43f164af14eaed5845062205470c9292971e18fc8190bacdeafeee04091
     min_sdk: 21
-    version: '2'
-    version_code: 2
+    version: 'Y'
+    version_code: 4
     locales:
       - en-US
 solana_mobile_dapp_publisher_portal:
   google_store_package: ''
   testing_instructions: Open the app and explore both tabs. GROW tab - enter SOL holdings, set DCA amounts, and view Monte Carlo projections. SPEND tab - enter retirement portfolio, set monthly income needs, and see success probability with drawdown analysis. Connect a Solana wallet to import current holdings. Use the share feature to generate projection images.
 lastSubmittedVersionOnChain:
-  address: 2wbJeFxLk2mycx5aixwS34XZPb8hnLSDaFYFVaGjhWYT
-  version_code: 2
-  apk_hash: 2NdRCnFIpHUocXLoOqCUDfGffye+OHch5tMzLT96MGA=
+  address: CrGs9eN3JyUC8VhSeXJNxu4PgpjC3u4QcsoPUF3LfoTd
+  version_code: 4
+  apk_hash: Te6+ol6mDffP5C2cewkeyrmaUGhbfRrlFh3oSZ2wUcY=
 lastUpdatedVersionOnStore:
-  address: 2wbJeFxLk2mycx5aixwS34XZPb8hnLSDaFYFVaGjhWYT
+  address: CrGs9eN3JyUC8VhSeXJNxu4PgpjC3u4QcsoPUF3LfoTd
