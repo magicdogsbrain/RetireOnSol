@@ -1,8 +1,8 @@
 {
   "schema_version": "0.1.0",
   "name": "RetireOnSol",
-  "short_description": "SOL accumulation & retirement planning with Monte Carlo simulations",
-  "long_description": "Plan your SOL accumulation and retirement journey with RetireOnSol. Features two modes: GROW to project your portfolio value using Monte Carlo simulations with CAGR and Power Law models, and SPEND to plan your retirement drawdown with success probability analysis. Connect your wallet to see current holdings, use live SOL price updates, and visualize 500+ simulation paths. Includes inflation-adjusted returns, DCA strategy planning, and shareable projection images.",
+  "short_description": "Native SOL retirement planner for Seeker",
+  "long_description": "Plan your SOL accumulation and retirement journey with RetireOnSol V3.5.5 — now a full native app built for Seeker. Two modes — Basic for quick projections, and Advanced for complete retirement planning. GROW tab projects your portfolio with CAGR, Power Law, and S-Curve models plus Monte Carlo simulations. SPEND tab simulates retirement drawdowns with success probability analysis. MONITOR tab tracks your active plan with DCA schedule, funding progress, and wallet balance. LEADERBOARD tab lets you compete with other planners using your Seeker ID (.skr name). Connect via Seed Vault (native MWA), get SOL price alerts and DCA reminders, and protect your data with biometric lock. Supports JitoSOL staking yield and inflation-adjusted returns.",
   "website": "https://retireonsol.uk",
   "app_url": "https://retireonsol.uk",
   "solana_mobile_dapp_publisher_portal": {
@@ -24,17 +24,17 @@
     ]
   },
   "release": {
-    "address": "",
-    "version": "2.0.3"
+    "address": "CrGs9eN3JyUC8VhSeXJNxu4PgpjC3u4QcsoPUF3LfoTd",
+    "version": "3.5.5"
   },
   "platforms": {
     "web": true,
-    "android": false,
+    "android": true,
     "ios": false
   },
   "category": "defi",
   "creator": {
-    "name": "",
-    "website": ""
+    "name": "RetireOnSol",
+    "website": "https://retireonsol.uk"
   }
 }
