@@ -16,7 +16,7 @@ app:
     - purpose: icon
       uri: android/assets/icon-512.png
 release:
-  address: CrGs9eN3JyUC8VhSeXJNxu4PgpjC3u4QcsoPUF3LfoTd
+  address: GxqYqfyzMjWuUkTEDDcZqLcW2rUK4doimhYyJGsxmk3B
   media:
     - purpose: icon
       uri: android/assets/icon-512.png
@@ -37,13 +37,28 @@ release:
     en-US:
       name: RetireOnSol
       short_description: SOL retirement planner
-      long_description: "RetireOnSol is a native Solana retirement planning app built for Seeker. It offers two modes: a simple Basic mode for quick projections, and a deep Advanced mode with four dedicated tabs for complete retirement planning.\n\nBASIC MODE: Enter your current SOL holdings, monthly DCA amount, years until retirement, and desired monthly income. Get instant portfolio projections with Monte Carlo simulations, pessimistic/median/optimistic outcomes, total ROI, and a sustainability verdict telling you exactly how long your retirement income will last.\n\nADVANCED MODE — GROW TAB: Choose from four growth models (CAGR with auto-decay, Power Law regression, S-Curve adoption, and Rainbow bands). Run 500-path Monte Carlo simulations with configurable percentile ranges. Set DCA frequency (daily, weekly, monthly, yearly) with custom investment amounts. Compare all models side-by-side on a single chart. View year-by-year breakdowns of SOL accumulated, price projections, and portfolio value in both nominal and inflation-adjusted terms.\n\nADVANCED MODE — SPEND TAB: Simulate retirement drawdowns using your Grow results. Set monthly income needs, see success probability across hundreds of Monte Carlo paths. View which scenarios fail and when, with detailed failed-path analysis. Median ending balance and years of sustainable income.\n\nADVANCED MODE — MONITOR TAB: Execute your plan and track it in real time. View your DCA schedule with next purchase dates. See funding progress, total invested vs target. Connect your Seed Vault wallet via native MWA to import live SOL balance. Get push notifications for DCA reminders and SOL price alerts.\n\nADVANCED MODE — LEADERBOARD TAB: Compete with other Seeker users. Scores auto-submit every hour based on plan commitment, DCA streak, and activity. Identified by your .skr Seeker ID — no registration or auth tokens required.\n\nWALLET: Connect via Seed Vault using native Mobile Wallet Adapter (MWA). Wallet connection persists across app restarts. Import your live SOL balance directly into projections.\n\nADDITIONAL FEATURES: Editable slider values (tap any number to type exact amounts). Live SOL price with auto-refresh. JitoSOL staking yield factored into returns. Inflation-adjusted projections (configurable rate). Shareable projection images. Biometric lock (fingerprint/face) for privacy. Push notifications for DCA reminders and price alerts. Dark theme optimized for OLED."
-      new_in_version: "V3.5.6 — Complete native rebuild for Seeker. Basic mode for quick projections. Seeker-only leaderboard with auto-submit scoring via .skr ID. Native MWA wallet connection for Seed Vault (no redirects). Editable slider values — tap to type exact numbers. Wallet connection persistence across restarts. DCA monitoring with push notifications. SOL price alerts. Biometric lock. JitoSOL staking yield. Improved wallet UI across all screens."
+      long_description: |-
+        RetireOnSol is a native Solana retirement planning app built for Seeker. It offers two modes: a simple Basic mode for quick projections, and a deep Advanced mode with four dedicated tabs for complete retirement planning.
+
+        BASIC MODE: Enter your current SOL holdings, monthly DCA amount, years until retirement, and desired monthly income. Get instant portfolio projections with Monte Carlo simulations, pessimistic/median/optimistic outcomes, total ROI, and a sustainability verdict telling you exactly how long your retirement income will last.
+
+        ADVANCED MODE — GROW TAB: Choose from four growth models (CAGR with auto-decay, Power Law regression, S-Curve adoption, and Rainbow bands). Run 500-path Monte Carlo simulations with configurable percentile ranges. Set DCA frequency (daily, weekly, monthly, yearly) with custom investment amounts. Compare all models side-by-side on a single chart. View year-by-year breakdowns of SOL accumulated, price projections, and portfolio value in both nominal and inflation-adjusted terms.
+
+        ADVANCED MODE — SPEND TAB: Simulate retirement drawdowns using your Grow results. Set monthly income needs, see success probability across hundreds of Monte Carlo paths. View which scenarios fail and when, with detailed failed-path analysis. Median ending balance and years of sustainable income.
+
+        ADVANCED MODE — MONITOR TAB: Execute your plan and track it in real time. View your DCA schedule with next purchase dates. See funding progress, total invested vs target. Connect your Seed Vault wallet via native MWA to import live SOL balance. Get push notifications for DCA reminders and SOL price alerts.
+
+        ADVANCED MODE — LEADERBOARD TAB: Compete with other Seeker users. Scores auto-submit every hour based on plan commitment, DCA streak, and activity. Identified by your .skr Seeker ID — no registration or auth tokens required.
+
+        WALLET: Connect via Seed Vault using native Mobile Wallet Adapter (MWA). Wallet connection persists across app restarts. Import your live SOL balance directly into projections.
+
+        ADDITIONAL FEATURES: Editable slider values (tap any number to type exact amounts). Live SOL price with auto-refresh. JitoSOL staking yield factored into returns. Inflation-adjusted projections (configurable rate). Shareable projection images. Biometric lock (fingerprint/face) for privacy. Push notifications for DCA reminders and price alerts. Dark theme optimized for OLED.
+      new_in_version: V3.5.6 — Complete native rebuild for Seeker. Basic mode for quick projections. Seeker-only leaderboard with auto-submit scoring via .skr ID. Native MWA wallet connection for Seed Vault (no redirects). Editable slider values — tap to type exact numbers. Wallet connection persistence across restarts. DCA monitoring with push notifications. SOL price alerts. Biometric lock. JitoSOL staking yield. Improved wallet UI across all screens.
       saga_features: ''
   android_details:
     cert_fingerprint: 3bd5b43f164af14eaed5845062205470c9292971e18fc8190bacdeafeee04091
-    min_sdk: 21
-    version: '3'
+    min_sdk: 24
+    version: 3.5.6
     version_code: 13
     locales:
       - en-US
@@ -51,8 +66,8 @@ solana_mobile_dapp_publisher_portal:
   google_store_package: ''
   testing_instructions: Open the app. Basic mode — adjust SOL holdings, DCA, years, and withdrawal sliders to see projections (tap values to type exact numbers). Switch to Advanced mode for full planning. In Advanced GROW tab — configure growth model (CAGR/Power Law/S-Curve), enable Monte Carlo, set DCA frequency, connect wallet to import balances. Click Execute Plan to activate monitoring. SPEND tab — see drawdown simulations from Grow results. MONITOR tab — view DCA schedule, funding status, and progress. LEADERBOARD tab — connect Seeker Vault wallet (.skr), join the leaderboard, score auto-updates every hour. Connect wallet via Seed Vault (choose Seed Vault when wallet chooser appears — uses native MWA). Close and reopen the app to verify wallet connection persists. Test biometric lock by backgrounding and reopening.
 lastSubmittedVersionOnChain:
-  address: CrGs9eN3JyUC8VhSeXJNxu4PgpjC3u4QcsoPUF3LfoTd
-  version_code: 4
-  apk_hash: Te6+ol6mDffP5C2cewkeyrmaUGhbfRrlFh3oSZ2wUcY=
+  address: GxqYqfyzMjWuUkTEDDcZqLcW2rUK4doimhYyJGsxmk3B
+  version_code: 13
+  apk_hash: rST8biASplgZuUNtS14Y3mPPstiFfiQTlWgpUH0dU04=
 lastUpdatedVersionOnStore:
-  address: CrGs9eN3JyUC8VhSeXJNxu4PgpjC3u4QcsoPUF3LfoTd
+  address: GxqYqfyzMjWuUkTEDDcZqLcW2rUK4doimhYyJGsxmk3B
