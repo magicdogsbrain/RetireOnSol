@@ -1,8 +1,8 @@
 {
   "schema_version": "0.1.0",
   "name": "RetireOnSol",
-  "short_description": "Native SOL retirement planner for Seeker",
-  "long_description": "Plan your SOL accumulation and retirement journey with RetireOnSol V3.5.5 — now a full native app built for Seeker. Two modes — Basic for quick projections, and Advanced for complete retirement planning. GROW tab projects your portfolio with CAGR, Power Law, and S-Curve models plus Monte Carlo simulations. SPEND tab simulates retirement drawdowns with success probability analysis. MONITOR tab tracks your active plan with DCA schedule, funding progress, and wallet balance. LEADERBOARD tab lets you compete with other planners using your Seeker ID (.skr name). Connect via Seed Vault (native MWA), get SOL price alerts and DCA reminders, and protect your data with biometric lock. Supports JitoSOL staking yield and inflation-adjusted returns.",
+  "short_description": "SOL retirement planner",
+  "long_description": "RetireOnSol is a native Solana retirement planning app built for Seeker. It offers two modes: a simple Basic mode for quick projections, and a deep Advanced mode with four dedicated tabs for complete retirement planning. Basic mode lets you enter SOL holdings, monthly DCA, years until retirement, and desired income for instant Monte Carlo projections. Advanced mode includes GROW (four growth models, 500-path simulations, DCA scheduling), SPEND (drawdown simulations with success probability), MONITOR (live DCA tracking, wallet balance, push notifications), and LEADERBOARD (compete via Seeker ID). Connect via Seed Vault with native MWA. Features editable sliders, JitoSOL yield, biometric lock, price alerts, and shareable projections.",
   "website": "https://retireonsol.uk",
   "app_url": "https://retireonsol.uk",
   "solana_mobile_dapp_publisher_portal": {
@@ -25,7 +25,7 @@
   },
   "release": {
     "address": "CrGs9eN3JyUC8VhSeXJNxu4PgpjC3u4QcsoPUF3LfoTd",
-    "version": "3.5.5"
+    "version": "3.5.6"
   },
   "platforms": {
     "web": true,
