@@ -1,0 +1,11 @@
+name = "retireonsol-leaderboard"
+main = "index.ts"
+compatibility_date = "2024-12-01"
+
+[vars]
+ENVIRONMENT = "production"
+
+[[kv_namespaces]]
+binding = "LEADERBOARD"
+id = "ee2b2b246db04d279c99351b66821884"
+preview_id = "e2954c5f254f4f2e83bee17d08ce59fd"

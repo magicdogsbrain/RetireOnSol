@@ -1,0 +1,58 @@
+publisher:
+  name: RetireOnSol
+  website: https://retireonsol.uk
+  email: charlieashworth70@proton.me
+  support_email: charlieashworth70@proton.me
+app:
+  name: RetireOnSol
+  address: Be9VhWdTKnFcjqmj2gHz4b9pZCR8kPaY78SrXtyx5vcS
+  android_package: uk.retireonsol.twa
+  urls:
+    license_url: https://retireonsol.uk/terms
+    copyright_url: https://retireonsol.uk
+    privacy_policy_url: https://retireonsol.uk/privacy
+    website: https://retireonsol.uk
+  media:
+    - purpose: icon
+      uri: android/assets/icon-512.png
+release:
+  address: CrGs9eN3JyUC8VhSeXJNxu4PgpjC3u4QcsoPUF3LfoTd
+  media:
+    - purpose: icon
+      uri: android/assets/icon-512.png
+    - purpose: banner
+      uri: android/assets/banner.png
+    - purpose: screenshot
+      uri: android/assets/promo-1-grow.png
+    - purpose: screenshot
+      uri: android/assets/promo-2-results.png
+    - purpose: screenshot
+      uri: android/assets/promo-3-spend.png
+    - purpose: screenshot
+      uri: android/assets/promo-4-drawdown.png
+  files:
+    - purpose: install
+      uri: android/RetireOnSol-v2.0.4.apk
+  catalog:
+    en-US:
+      name: RetireOnSol
+      short_description: SOL retirement planner
+      long_description: Plan your SOL accumulation and retirement journey with RetireOnSol. Features two modes - GROW to project your portfolio value using Monte Carlo simulations with CAGR and Power Law models, and SPEND to plan your retirement drawdown with success probability analysis. Connect your wallet to see current holdings, use live SOL price updates, and visualize 500+ simulation paths. Includes inflation-adjusted returns, DCA strategy planning, and shareable projection images.
+      new_in_version: v2.0.4 fixes blank screen issue with improved service worker caching and error handling
+      saga_features: ''
+  android_details:
+    cert_fingerprint: 3bd5b43f164af14eaed5845062205470c9292971e18fc8190bacdeafeee04091
+    min_sdk: 21
+    version: 'Y'
+    version_code: 4
+    locales:
+      - en-US
+solana_mobile_dapp_publisher_portal:
+  google_store_package: ''
+  testing_instructions: Open the app and explore both tabs. GROW tab - enter SOL holdings, set DCA amounts, and view Monte Carlo projections. SPEND tab - enter retirement portfolio, set monthly income needs, and see success probability with drawdown analysis. Connect a Solana wallet to import current holdings. Use the share feature to generate projection images.
+lastSubmittedVersionOnChain:
+  address: CrGs9eN3JyUC8VhSeXJNxu4PgpjC3u4QcsoPUF3LfoTd
+  version_code: 4
+  apk_hash: Te6+ol6mDffP5C2cewkeyrmaUGhbfRrlFh3oSZ2wUcY=
+lastUpdatedVersionOnStore:
+  address: CrGs9eN3JyUC8VhSeXJNxu4PgpjC3u4QcsoPUF3LfoTd

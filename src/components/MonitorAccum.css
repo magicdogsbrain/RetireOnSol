@@ -1,0 +1,356 @@
+.monitor-accum {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.monitor-accum-section {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.monitor-accum-section h3 {
+  margin: 0 0 0.8rem 0;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+/* ── Funding Status ── */
+
+.funding-status.funded {
+  text-align: center;
+}
+
+.funding-status.funded h3 {
+  font-size: 1.2rem;
+  color: #00d18c;
+}
+
+.funding-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.funding-line {
+  text-align: center;
+}
+
+.funding-note {
+  color: #888;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.funding-targets {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.funding-target-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.funding-label {
+  color: #888;
+}
+
+.funding-value {
+  color: #e0e0e0;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.funding-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.funding-progress-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.funding-progress-label {
+  color: #888;
+  font-size: 0.85rem;
+  min-width: 55px;
+}
+
+.progress-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.progress-bar-text {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: #00d18c;
+}
+
+.progress-bar-values {
+  font-size: 0.75rem;
+  color: #aaa;
+  white-space: nowrap;
+}
+
+.funding-gap {
+  color: #ff9800;
+  font-size: 0.85rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.funding-actions {
+  margin-top: 0.8rem;
+}
+
+/* ── DCA Schedule ── */
+
+.dca-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.dca-info-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.dca-label {
+  color: #888;
+}
+
+.dca-value {
+  color: #e0e0e0;
+}
+
+.dca-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  background: rgba(255, 152, 0, 0.1);
+  border: 1px solid rgba(255, 152, 0, 0.25);
+  border-radius: 8px;
+  padding: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.dca-warning.dca-warning-full {
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+}
+
+.dca-warning-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #ff9800;
+}
+
+.dca-warning-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.dca-warning-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.dca-warning-stat-label {
+  font-size: 0.65rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.dca-warning-stat-value {
+  font-size: 0.9rem;
+  color: #ff9800;
+  font-weight: 600;
+}
+
+.dca-mark-done-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.dca-mark-done-btn {
+  flex: 1;
+  min-width: 100px;
+  padding: 8px 12px;
+  background: rgba(20, 241, 149, 0.1);
+  border: 1px solid #14F195;
+  border-radius: 8px;
+  color: #14F195;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.dca-mark-done-btn:hover {
+  background: rgba(20, 241, 149, 0.2);
+}
+
+.dca-mark-done-btn:active {
+  background: rgba(20, 241, 149, 0.3);
+  transform: scale(0.97);
+}
+
+.dca-warning-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.dca-warning-text {
+  font-size: 0.8rem;
+  color: #ff9800;
+  line-height: 1.4;
+}
+
+.dca-note {
+  color: #888;
+  font-size: 0.8rem;
+  font-style: italic;
+  margin: 0.5rem 0 0 0;
+}
+
+/* ── Progress Tracker ── */
+
+.progress-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.progress-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.progress-stat-label {
+  font-size: 0.7rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.progress-stat-value {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  font-weight: 600;
+}
+
+/* ── Leaderboard (in Monitor) ── */
+
+.leaderboard-join {
+  text-align: center;
+}
+
+.leaderboard-join-btn {
+  padding: 10px 24px;
+  background: rgba(153, 69, 255, 0.1);
+  border: 1px dashed rgba(153, 69, 255, 0.4);
+  border-radius: 8px;
+  color: var(--sol-purple, #9945FF);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.leaderboard-join-btn:hover {
+  background: rgba(153, 69, 255, 0.15);
+  border-color: var(--sol-purple, #9945FF);
+}
+
+.leaderboard-join-hint {
+  font-size: 0.75rem;
+  color: #666;
+  margin: 0.5rem 0 0;
+}
+
+.leaderboard-mini {
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.leaderboard-mini:hover {
+  background: rgba(153, 69, 255, 0.08);
+}
+
+.leaderboard-mini-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.leaderboard-mini-icon {
+  font-size: 1.1rem;
+}
+
+.leaderboard-mini-label {
+  font-weight: 600;
+  color: #e0e0e0;
+  flex: 1;
+}
+
+.leaderboard-mini-arrow {
+  color: var(--sol-purple, #9945FF);
+  font-size: 1.2rem;
+}
+
+.leaderboard-mini-hint {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 0.3rem;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 500px) {
+  .progress-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .dca-info-row,
+  .funding-target-row {
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  .funding-progress-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

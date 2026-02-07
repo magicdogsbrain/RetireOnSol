@@ -1,0 +1,96 @@
+.header {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  padding-top: calc(1rem + var(--safe-area-top));
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.header-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+}
+
+.header-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-brand h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--sol-purple), var(--sol-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.tagline {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.demo-badge {
+  background: rgba(245, 166, 35, 0.2);
+  color: #F5A623;
+  border: 1px solid rgba(245, 166, 35, 0.4);
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  margin-left: 0.5rem;
+}
+
+.seeker-badge {
+  background: linear-gradient(135deg, rgba(153, 69, 255, 0.2), rgba(20, 241, 149, 0.2));
+  color: var(--sol-green);
+  border: 1px solid rgba(20, 241, 149, 0.3);
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding-top: calc(0.85rem + var(--safe-area-top));
+    padding-right: 1rem;
+    padding-bottom: 0.85rem;
+    padding-left: 1rem;
+  }
+
+  .header-logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .header-brand h1 {
+    font-size: 1.25rem;
+  }
+
+  .tagline {
+    font-size: 0.7rem;
+  }
+}

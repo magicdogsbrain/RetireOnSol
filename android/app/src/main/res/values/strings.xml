@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">RetireOnSol</string>
+    <string name="title_activity_main">RetireOnSol</string>
+    <string name="package_name">uk.retireonsol.app</string>
+    <string name="custom_url_scheme">uk.retireonsol.app</string>
+</resources>

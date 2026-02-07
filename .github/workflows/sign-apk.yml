@@ -1,0 +1,91 @@
+name: Sign APK
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version number (e.g., 1.0.0)'
+        required: true
+        default: '3.0.0'
+
+jobs:
+  sign-apk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Download unsigned APK from artifact
+        run: |
+          mkdir -p android
+          if [ -f "android/RetireOnSol-unsigned.apk" ]; then
+            echo "Found unsigned APK"
+          else
+            echo "Please upload the unsigned APK to android/RetireOnSol-unsigned.apk"
+            exit 1
+          fi
+
+      - name: Generate Keystore
+        run: |
+          keytool -genkey -v \
+            -keystore android/retireonsol.keystore \
+            -alias retireonsol \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000 \
+            -storepass ${{ secrets.KEYSTORE_PASSWORD }} \
+            -keypass ${{ secrets.KEYSTORE_PASSWORD }} \
+            -dname "CN=RetireOnSol, OU=RetireOnSol, O=RetireOnSol, L=London, ST=England, C=UK"
+
+      - name: Get SHA256 Fingerprint
+        id: fingerprint
+        run: |
+          FINGERPRINT=$(keytool -list -v -keystore android/retireonsol.keystore -alias retireonsol -storepass ${{ secrets.KEYSTORE_PASSWORD }} | grep "SHA256:" | awk '{print $2}')
+          echo "SHA256 Fingerprint: $FINGERPRINT"
+          echo "fingerprint=$FINGERPRINT" >> $GITHUB_OUTPUT
+
+      - name: Zipalign APK
+        run: |
+          zipalign -v -p 4 android/RetireOnSol-unsigned.apk android/RetireOnSol-aligned.apk
+
+      - name: Sign APK
+        run: |
+          apksigner sign \
+            --ks android/retireonsol.keystore \
+            --ks-key-alias retireonsol \
+            --ks-pass pass:${{ secrets.KEYSTORE_PASSWORD }} \
+            --key-pass pass:${{ secrets.KEYSTORE_PASSWORD }} \
+            --out android/RetireOnSol-v${{ inputs.version }}-signed.apk \
+            android/RetireOnSol-aligned.apk
+
+      - name: Verify APK signature
+        run: |
+          apksigner verify --verbose android/RetireOnSol-v${{ inputs.version }}-signed.apk
+
+      - name: Upload signed APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: RetireOnSol-v${{ inputs.version }}-signed
+          path: android/RetireOnSol-v${{ inputs.version }}-signed.apk
+
+      - name: Upload keystore (for backup)
+        uses: actions/upload-artifact@v4
+        with:
+          name: retireonsol-keystore
+          path: android/retireonsol.keystore
+
+      - name: Output fingerprint
+        run: |
+          echo "## APK Signing Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**SHA256 Fingerprint:** \`${{ steps.fingerprint.outputs.fingerprint }}\`" >> $GITHUB_STEP_SUMMARY

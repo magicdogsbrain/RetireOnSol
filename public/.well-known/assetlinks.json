@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "uk.retireonsol.twa",
+    "sha256_cert_fingerprints": ["3B:D5:B4:3F:16:4A:F1:4E:AE:D5:84:50:62:20:54:70:C9:29:29:71:E1:8F:C8:19:0B:AC:DE:AF:EE:E0:40:91"]
+  }
+}]
