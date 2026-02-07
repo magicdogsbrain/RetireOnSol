@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "uk.retireonsol.app-mergeReleaseResources-47:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/cpbooth/.gradle/caches/8.14.3/transforms/e5934d0686e6e9620447851069d1c02c/transformed/material-1.9.0/res/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "54",
+                        "endOffsets": "105"
+                    }
+                }
+            ]
+        }
+    ]
+}

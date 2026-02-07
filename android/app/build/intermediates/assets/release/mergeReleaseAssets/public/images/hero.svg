@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D0D0D"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+    <linearGradient id="growChart" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#14F195"/>
+      <stop offset="100%" style="stop-color:#9945FF"/>
+    </linearGradient>
+    <linearGradient id="spendChart" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9945FF"/>
+      <stop offset="30%" style="stop-color:#14F195"/>
+      <stop offset="100%" style="stop-color:#FF6B6B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9945FF"/>
+      <stop offset="100%" style="stop-color:#14F195"/>
+    </linearGradient>
+    <linearGradient id="mcBand" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#14F195;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#14F195;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#14F195;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g stroke="rgba(153,69,255,0.1)" stroke-width="1">
+    <line x1="100" y1="100" x2="100" y2="530"/>
+    <line x1="200" y1="100" x2="200" y2="530"/>
+    <line x1="300" y1="100" x2="300" y2="530"/>
+    <line x1="400" y1="100" x2="400" y2="530"/>
+    <line x1="500" y1="100" x2="500" y2="530"/>
+    <line x1="60" y1="180" x2="540" y2="180"/>
+    <line x1="60" y1="280" x2="540" y2="280"/>
+    <line x1="60" y1="380" x2="540" y2="380"/>
+    <line x1="60" y1="480" x2="540" y2="480"/>
+  </g>
+
+  <!-- GROW PHASE - Left side chart -->
+  <!-- Monte Carlo band (90% confidence) -->
+  <path d="M 80 470 Q 140 465 180 440 T 280 360 T 380 240 T 480 140
+           L 480 180 T 380 300 T 280 400 T 180 460 Q 140 475 80 480 Z"
+        fill="url(#mcBand)"/>
+
+  <!-- Individual MC simulation paths (faded) -->
+  <path d="M 80 475 Q 150 460 200 420 T 320 280 T 440 120"
+        fill="none" stroke="#14F195" stroke-width="1" stroke-opacity="0.2"/>
+  <path d="M 80 468 Q 160 455 210 400 T 340 250 T 460 150"
+        fill="none" stroke="#9945FF" stroke-width="1" stroke-opacity="0.2"/>
+  <path d="M 80 478 Q 145 470 190 450 T 300 350 T 420 200"
+        fill="none" stroke="#14F195" stroke-width="1" stroke-opacity="0.15"/>
+
+  <!-- Main growth curve (median) -->
+  <path d="M 80 472 Q 150 460 200 430 T 320 300 T 440 160"
+        fill="none"
+        stroke="url(#growChart)"
+        stroke-width="4"
+        stroke-linecap="round"/>
+
+  <!-- Area fill under median curve -->
+  <path d="M 80 472 Q 150 460 200 430 T 320 300 T 440 160 L 440 500 L 80 500 Z"
+        fill="url(#growChart)"
+        opacity="0.15"/>
+
+  <!-- GROW label -->
+  <rect x="70" y="105" width="80" height="30" rx="15" fill="rgba(20,241,149,0.2)" stroke="#14F195" stroke-width="1"/>
+  <text x="110" y="126" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#14F195" text-anchor="middle">GROW</text>
+
+  <!-- Transition line -->
+  <line x1="480" y1="100" x2="480" y2="530" stroke="#9945FF" stroke-width="2" stroke-dasharray="8,4" opacity="0.5"/>
+  <text x="480" y="90" font-family="Arial, sans-serif" font-size="12" fill="#9945FF" text-anchor="middle">Retirement</text>
+
+  <!-- SPEND PHASE - Middle chart -->
+  <!-- Monte Carlo bands for drawdown -->
+  <path d="M 480 160 Q 520 155 550 165 T 620 200 T 680 280 T 730 380
+           L 730 320 T 680 230 T 620 170 T 550 155 Q 520 150 480 155 Z"
+        fill="rgba(20,241,149,0.15)"/>
+
+  <!-- Failed path (red) -->
+  <path d="M 480 162 Q 530 180 570 250 T 640 400 T 700 520"
+        fill="none" stroke="#FF6B6B" stroke-width="2" stroke-opacity="0.5"/>
+
+  <!-- Successful path (green, declining but surviving) -->
+  <path d="M 480 158 Q 540 165 580 200 T 660 300 T 730 350"
+        fill="none" stroke="#14F195" stroke-width="2" stroke-opacity="0.4"/>
+
+  <!-- Main drawdown curve (median) -->
+  <path d="M 480 160 Q 530 170 570 210 T 650 320 T 720 400"
+        fill="none"
+        stroke="url(#spendChart)"
+        stroke-width="4"
+        stroke-linecap="round"/>
+
+  <!-- SPEND label -->
+  <rect x="490" y="105" width="80" height="30" rx="15" fill="rgba(153,69,255,0.2)" stroke="#9945FF" stroke-width="1"/>
+  <text x="530" y="126" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#9945FF" text-anchor="middle">SPEND</text>
+
+  <!-- Peak value indicator -->
+  <circle cx="440" cy="160" r="8" fill="#14F195"/>
+  <line x1="440" y1="168" x2="440" y2="200" stroke="#14F195" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="440" y="218" font-family="Arial, sans-serif" font-size="11" fill="#14F195" text-anchor="middle">Peak</text>
+
+  <!-- Success rate indicator -->
+  <rect x="660" y="420" width="70" height="50" rx="8" fill="rgba(20,241,149,0.2)" stroke="#14F195" stroke-width="1"/>
+  <text x="695" y="445" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#14F195" text-anchor="middle">94%</text>
+  <text x="695" y="462" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">Success</text>
+
+  <!-- Right side content panel -->
+  <rect x="760" y="80" width="400" height="470" rx="20" fill="rgba(26,26,26,0.8)" stroke="rgba(153,69,255,0.3)" stroke-width="1"/>
+
+  <!-- App Logo and Name -->
+  <circle cx="850" cy="150" r="40" fill="url(#accent)"/>
+  <text x="850" y="168" font-family="Arial, sans-serif" font-size="45" font-weight="bold" fill="white" text-anchor="middle">$</text>
+
+  <text x="960" y="140" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="white" text-anchor="start">RetireOn</text>
+  <text x="960" y="180" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="url(#accent)" text-anchor="start">Sol</text>
+
+  <!-- Tagline -->
+  <text x="960" y="220" font-family="Arial, sans-serif" font-size="16" fill="#888888" text-anchor="middle">Plan. Grow. Retire.</text>
+
+  <!-- Feature cards -->
+  <!-- Monte Carlo -->
+  <rect x="785" y="260" width="170" height="70" rx="12" fill="rgba(153,69,255,0.15)" stroke="#9945FF" stroke-width="1"/>
+  <text x="870" y="290" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#9945FF" text-anchor="middle">Monte Carlo</text>
+  <text x="870" y="312" font-family="Arial, sans-serif" font-size="12" fill="#888" text-anchor="middle">500+ Simulations</text>
+
+  <!-- Growth Models -->
+  <rect x="965" y="260" width="170" height="70" rx="12" fill="rgba(20,241,149,0.15)" stroke="#14F195" stroke-width="1"/>
+  <text x="1050" y="290" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#14F195" text-anchor="middle">Growth Models</text>
+  <text x="1050" y="312" font-family="Arial, sans-serif" font-size="12" fill="#888" text-anchor="middle">CAGR • Power Law</text>
+
+  <!-- Drawdown Planning -->
+  <rect x="785" y="345" width="170" height="70" rx="12" fill="rgba(20,241,149,0.15)" stroke="#14F195" stroke-width="1"/>
+  <text x="870" y="375" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#14F195" text-anchor="middle">Spend Planning</text>
+  <text x="870" y="397" font-family="Arial, sans-serif" font-size="12" fill="#888" text-anchor="middle">Retirement Drawdown</text>
+
+  <!-- Inflation Adjusted -->
+  <rect x="965" y="345" width="170" height="70" rx="12" fill="rgba(153,69,255,0.15)" stroke="#9945FF" stroke-width="1"/>
+  <text x="1050" y="375" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#9945FF" text-anchor="middle">Real Returns</text>
+  <text x="1050" y="397" font-family="Arial, sans-serif" font-size="12" fill="#888" text-anchor="middle">Inflation Adjusted</text>
+
+  <!-- DCA Calculator -->
+  <rect x="785" y="430" width="170" height="70" rx="12" fill="rgba(153,69,255,0.15)" stroke="#9945FF" stroke-width="1"/>
+  <text x="870" y="460" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#9945FF" text-anchor="middle">DCA Strategy</text>
+  <text x="870" y="482" font-family="Arial, sans-serif" font-size="12" fill="#888" text-anchor="middle">Weekly • Monthly</text>
+
+  <!-- Wallet Connect -->
+  <rect x="965" y="430" width="170" height="70" rx="12" fill="rgba(20,241,149,0.15)" stroke="#14F195" stroke-width="1"/>
+  <text x="1050" y="460" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#14F195" text-anchor="middle">Wallet Connect</text>
+  <text x="1050" y="482" font-family="Arial, sans-serif" font-size="12" fill="#888" text-anchor="middle">Solana Compatible</text>
+
+  <!-- Bottom disclaimer -->
+  <text x="600" y="590" font-family="Arial, sans-serif" font-size="14" fill="#555" text-anchor="middle">For educational and entertainment purposes only. Not financial advice.</text>
+
+  <!-- Version badge -->
+  <rect x="1100" y="560" width="60" height="24" rx="12" fill="rgba(153,69,255,0.2)"/>
+  <text x="1130" y="577" font-family="Arial, sans-serif" font-size="11" fill="#9945FF" text-anchor="middle">v2.0</text>
+</svg>

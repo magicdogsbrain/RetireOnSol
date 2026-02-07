@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "uk.retireonsol.app-mergeDebugResources-47:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "/Users/cpbooth/.gradle/caches/8.14.3/transforms/52946bfc2eea2c566e6aef6d04312396/transformed/core-splashscreen-1.2.0/res/values-v30/values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "7",
+                        "endColumns": "12",
+                        "endOffsets": "433"
+                    }
+                }
+            ]
+        }
+    ]
+}

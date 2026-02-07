@@ -1,0 +1,280 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="uk.retireonsol.app"
+4    android:versionCode="11"
+5    android:versionName="3.5.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="36" />
+10
+11    <!-- Permissions -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:40:5-67
+12-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:40:22-64
+13    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+13-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:41:5-77
+13-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:41:22-74
+14
+15    <!-- Declare external apps we query/launch -->
+16    <queries>
+16-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:44:5-51:15
+17        <intent>
+17-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:45:9-48:18
+18            <action android:name="android.intent.action.VIEW" />
+18-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:46:13-65
+18-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:46:21-62
+19
+20            <data android:scheme="solana-wallet" />
+20-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:47:13-52
+20-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:47:19-49
+21        </intent>
+22
+23        <package android:name="app.phantom" />
+23-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:49:9-47
+23-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:49:18-44
+24        <package android:name="com.solanamobile.wallet" />
+24-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:50:9-59
+24-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:50:18-56
+25
+26        <intent>
+26-->[:capacitor-browser] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/browser/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:9-10:18
+27            <action android:name="android.support.customtabs.action.CustomTabsService" />
+27-->[:capacitor-browser] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/browser/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:13-90
+27-->[:capacitor-browser] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/browser/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:21-87
+28        </intent> <!-- Support querying whether an app with the wallet endpoint role is available -->
+29        <intent>
+29-->[com.solanamobile:mobile-wallet-adapter-clientlib:2.1.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/301366801006868bf68de0599e041c4d/transformed/mobile-wallet-adapter-clientlib-2.1.0/AndroidManifest.xml:14:9-20:18
+30            <action android:name="android.intent.action.VIEW" />
+30-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:46:13-65
+30-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:46:21-62
+31
+32            <category android:name="android.intent.category.BROWSABLE" />
+32-->[com.solanamobile:mobile-wallet-adapter-clientlib:2.1.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/301366801006868bf68de0599e041c4d/transformed/mobile-wallet-adapter-clientlib-2.1.0/AndroidManifest.xml:17:13-74
+32-->[com.solanamobile:mobile-wallet-adapter-clientlib:2.1.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/301366801006868bf68de0599e041c4d/transformed/mobile-wallet-adapter-clientlib-2.1.0/AndroidManifest.xml:17:23-71
+33
+34            <data android:scheme="solana-wallet" />
+34-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:47:13-52
+34-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:47:19-49
+35        </intent>
+36    </queries>
+37
+38    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+38-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:5-81
+38-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:7:22-78
+39    <uses-permission android:name="android.permission.WAKE_LOCK" />
+39-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:5-68
+39-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:22-65
+40    <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
+40-->[androidx.biometric:biometric:1.1.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/c2a9e970b8e96f7090ec539cfd32155d/transformed/biometric-1.1.0/AndroidManifest.xml:24:5-72
+40-->[androidx.biometric:biometric:1.1.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/c2a9e970b8e96f7090ec539cfd32155d/transformed/biometric-1.1.0/AndroidManifest.xml:24:22-69
+41    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+41-->[androidx.biometric:biometric:1.1.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/c2a9e970b8e96f7090ec539cfd32155d/transformed/biometric-1.1.0/AndroidManifest.xml:27:5-74
+41-->[androidx.biometric:biometric:1.1.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/c2a9e970b8e96f7090ec539cfd32155d/transformed/biometric-1.1.0/AndroidManifest.xml:27:22-71
+42
+43    <permission
+43-->[androidx.core:core:1.17.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/9a030c74a469cf38c97a566ef58ce342/transformed/core-1.17.0/AndroidManifest.xml:22:5-24:47
+44        android:name="uk.retireonsol.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+44-->[androidx.core:core:1.17.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/9a030c74a469cf38c97a566ef58ce342/transformed/core-1.17.0/AndroidManifest.xml:23:9-81
+45        android:protectionLevel="signature" />
+45-->[androidx.core:core:1.17.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/9a030c74a469cf38c97a566ef58ce342/transformed/core-1.17.0/AndroidManifest.xml:24:9-44
+46
+47    <uses-permission android:name="uk.retireonsol.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+47-->[androidx.core:core:1.17.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/9a030c74a469cf38c97a566ef58ce342/transformed/core-1.17.0/AndroidManifest.xml:26:5-97
+47-->[androidx.core:core:1.17.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/9a030c74a469cf38c97a566ef58ce342/transformed/core-1.17.0/AndroidManifest.xml:26:22-94
+48    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+48-->[com.solanamobile:mobile-wallet-adapter-clientlib:2.1.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/301366801006868bf68de0599e041c4d/transformed/mobile-wallet-adapter-clientlib-2.1.0/AndroidManifest.xml:9:5-79
+48-->[com.solanamobile:mobile-wallet-adapter-clientlib:2.1.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/301366801006868bf68de0599e041c4d/transformed/mobile-wallet-adapter-clientlib-2.1.0/AndroidManifest.xml:9:22-76
+49
+50    <application
+50-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:4:5-37:19
+51        android:allowBackup="true"
+51-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:5:9-35
+52        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+52-->[androidx.core:core:1.17.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/9a030c74a469cf38c97a566ef58ce342/transformed/core-1.17.0/AndroidManifest.xml:28:18-86
+53        android:debuggable="true"
+54        android:extractNativeLibs="false"
+55        android:icon="@mipmap/ic_launcher"
+55-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:6:9-43
+56        android:label="@string/app_name"
+56-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:7:9-41
+57        android:roundIcon="@mipmap/ic_launcher_round"
+57-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:8:9-54
+58        android:supportsRtl="true"
+58-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:9:9-35
+59        android:theme="@style/AppTheme"
+59-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:11:9-40
+60        android:usesCleartextTraffic="true" >
+60-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:10:9-44
+61        <activity
+61-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:13:9-26:20
+62            android:name="uk.retireonsol.app.MainActivity"
+62-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:15:13-41
+63            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode|navigation|density"
+63-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:14:13-148
+64            android:exported="true"
+64-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:19:13-36
+65            android:label="@string/title_activity_main"
+65-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:16:13-56
+66            android:launchMode="singleTask"
+66-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:18:13-44
+67            android:theme="@style/AppTheme.NoActionBarLaunch" >
+67-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:17:13-62
+68            <intent-filter>
+68-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:21:13-24:29
+69                <action android:name="android.intent.action.MAIN" />
+69-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:22:17-69
+69-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:22:25-66
+70
+71                <category android:name="android.intent.category.LAUNCHER" />
+71-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:23:17-77
+71-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:23:27-74
+72            </intent-filter>
+73        </activity>
+74
+75        <provider
+76            android:name="androidx.core.content.FileProvider"
+76-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:29:13-62
+77            android:authorities="uk.retireonsol.app.fileprovider"
+77-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:30:13-64
+78            android:exported="false"
+78-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:31:13-37
+79            android:grantUriPermissions="true" >
+79-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:32:13-47
+80            <meta-data
+80-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:33:13-35:64
+81                android:name="android.support.FILE_PROVIDER_PATHS"
+81-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:34:17-67
+82                android:resource="@xml/file_paths" />
+82-->/Users/cpbooth/coding/RetireOnSol/android/app/src/main/AndroidManifest.xml:35:17-51
+83        </provider>
+84
+85        <activity
+85-->[:capacitor-browser] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/browser/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:9-18:75
+86            android:name="com.capacitorjs.plugins.browser.BrowserControllerActivity"
+86-->[:capacitor-browser] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/browser/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:13-85
+87            android:exported="false"
+87-->[:capacitor-browser] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/browser/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:16:13-37
+88            android:launchMode="singleTask"
+88-->[:capacitor-browser] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/browser/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:17:13-44
+89            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+89-->[:capacitor-browser] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/browser/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:18:13-72
+90
+91        <receiver android:name="com.capacitorjs.plugins.localnotifications.TimedNotificationPublisher" />
+91-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:9-106
+91-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:12:19-103
+92        <receiver android:name="com.capacitorjs.plugins.localnotifications.NotificationDismissReceiver" />
+92-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:9-107
+92-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:13:19-104
+93        <receiver
+93-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:14:9-23:20
+94            android:name="com.capacitorjs.plugins.localnotifications.LocalNotificationRestoreReceiver"
+94-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:15:13-103
+95            android:directBootAware="true"
+95-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:16:13-43
+96            android:exported="false" >
+96-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:17:13-37
+97            <intent-filter>
+97-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:18:13-22:29
+98                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+98-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:19:17-86
+98-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:19:25-83
+99                <action android:name="android.intent.action.BOOT_COMPLETED" />
+99-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:20:17-79
+99-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:20:25-76
+100                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+100-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:21:17-82
+100-->[:capacitor-local-notifications] /Users/cpbooth/coding/RetireOnSol/node_modules/@capacitor/local-notifications/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:21:25-79
+101            </intent-filter>
+102        </receiver>
+103
+104        <activity
+104-->[:capgo-capacitor-native-biometric] /Users/cpbooth/coding/RetireOnSol/node_modules/@capgo/capacitor-native-biometric/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:8:9-11:59
+105            android:name="ee.forgr.biometric.AuthActivity"
+105-->[:capgo-capacitor-native-biometric] /Users/cpbooth/coding/RetireOnSol/node_modules/@capgo/capacitor-native-biometric/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:9:13-59
+106            android:label="@string/title_activity_auth_activity"
+106-->[:capgo-capacitor-native-biometric] /Users/cpbooth/coding/RetireOnSol/node_modules/@capgo/capacitor-native-biometric/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:10:13-65
+107            android:theme="@style/AppTheme.Transparent" />
+107-->[:capgo-capacitor-native-biometric] /Users/cpbooth/coding/RetireOnSol/node_modules/@capgo/capacitor-native-biometric/android/build/intermediates/merged_manifest/debug/processDebugManifest/AndroidManifest.xml:11:13-56
+108
+109        <provider
+109-->[androidx.emoji2:emoji2:1.3.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/031ca92f2a30ba3439af443c1cff9124/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+110            android:name="androidx.startup.InitializationProvider"
+110-->[androidx.emoji2:emoji2:1.3.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/031ca92f2a30ba3439af443c1cff9124/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+111            android:authorities="uk.retireonsol.app.androidx-startup"
+111-->[androidx.emoji2:emoji2:1.3.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/031ca92f2a30ba3439af443c1cff9124/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+112            android:exported="false" >
+112-->[androidx.emoji2:emoji2:1.3.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/031ca92f2a30ba3439af443c1cff9124/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+113            <meta-data
+113-->[androidx.emoji2:emoji2:1.3.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/031ca92f2a30ba3439af443c1cff9124/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+114                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+114-->[androidx.emoji2:emoji2:1.3.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/031ca92f2a30ba3439af443c1cff9124/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+115                android:value="androidx.startup" />
+115-->[androidx.emoji2:emoji2:1.3.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/031ca92f2a30ba3439af443c1cff9124/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+116            <meta-data
+116-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/cpbooth/.gradle/caches/8.14.3/transforms/0d2984c85ee3b21a8930928c544d05c9/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+117                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+117-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/cpbooth/.gradle/caches/8.14.3/transforms/0d2984c85ee3b21a8930928c544d05c9/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+118                android:value="androidx.startup" />
+118-->[androidx.lifecycle:lifecycle-process:2.6.2] /Users/cpbooth/.gradle/caches/8.14.3/transforms/0d2984c85ee3b21a8930928c544d05c9/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+119            <meta-data
+119-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+120                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+120-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+121                android:value="androidx.startup" />
+121-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+122        </provider>
+123
+124        <uses-library
+124-->[androidx.window:window:1.0.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/fb84f9b46a2ef07053e6cb5ac5025e67/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+125            android:name="androidx.window.extensions"
+125-->[androidx.window:window:1.0.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/fb84f9b46a2ef07053e6cb5ac5025e67/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+126            android:required="false" />
+126-->[androidx.window:window:1.0.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/fb84f9b46a2ef07053e6cb5ac5025e67/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+127        <uses-library
+127-->[androidx.window:window:1.0.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/fb84f9b46a2ef07053e6cb5ac5025e67/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+128            android:name="androidx.window.sidecar"
+128-->[androidx.window:window:1.0.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/fb84f9b46a2ef07053e6cb5ac5025e67/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+129            android:required="false" />
+129-->[androidx.window:window:1.0.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/fb84f9b46a2ef07053e6cb5ac5025e67/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+130
+131        <receiver
+131-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+132            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+132-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+133            android:directBootAware="false"
+133-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+134            android:enabled="true"
+134-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+135            android:exported="true"
+135-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+136            android:permission="android.permission.DUMP" >
+136-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+137            <intent-filter>
+137-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+138                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+138-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+138-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+139            </intent-filter>
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+141                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+141-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+141-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+142            </intent-filter>
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+144                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+144-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+144-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+145            </intent-filter>
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+147                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+147-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+147-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/cpbooth/.gradle/caches/8.14.3/transforms/2dca48253e97e131f485c0ea21e47dd8/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+148            </intent-filter>
+149        </receiver>
+150    </application>
+151
+152</manifest>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9945FF"/>
+      <stop offset="100%" style="stop-color:#14F195"/>
+    </linearGradient>
+    <linearGradient id="chart" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#14F195"/>
+      <stop offset="100%" style="stop-color:#9945FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="100" fill="#0D0D0D"/>
+
+  <!-- Grid lines -->
+  <g stroke="rgba(153,69,255,0.2)" stroke-width="2">
+    <line x1="80" y1="120" x2="80" y2="400"/>
+    <line x1="180" y1="120" x2="180" y2="400"/>
+    <line x1="280" y1="120" x2="280" y2="400"/>
+    <line x1="380" y1="120" x2="380" y2="400"/>
+    <line x1="80" y1="200" x2="430" y2="200"/>
+    <line x1="80" y1="280" x2="430" y2="280"/>
+    <line x1="80" y1="360" x2="430" y2="360"/>
+  </g>
+
+  <!-- Chart line (growth curve) -->
+  <path d="M 80 380 Q 150 370 200 340 T 280 260 T 360 150 T 430 80"
+        fill="none"
+        stroke="url(#chart)"
+        stroke-width="12"
+        stroke-linecap="round"/>
+
+  <!-- Area fill under curve -->
+  <path d="M 80 380 Q 150 370 200 340 T 280 260 T 360 150 T 430 80 L 430 400 L 80 400 Z"
+        fill="url(#chart)"
+        opacity="0.3"/>
+
+  <!-- SOL symbol circle -->
+  <circle cx="400" cy="110" r="60" fill="url(#bg)"/>
+
+  <!-- Dollar sign in circle -->
+  <text x="400" y="130"
+        font-family="Arial, sans-serif"
+        font-size="70"
+        font-weight="bold"
+        fill="white"
+        text-anchor="middle">$</text>
+
+  <!-- "ROS" text -->
+  <text x="256" y="480"
+        font-family="Arial, sans-serif"
+        font-size="48"
+        font-weight="bold"
+        fill="white"
+        text-anchor="middle">RetireOnSol</text>
+</svg>
