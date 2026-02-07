@@ -117,19 +117,16 @@ export function Calculator({
 
       <div className="input-group">
         <label>Monthly DCA (USD)</label>
-        <div className="input-with-prefix">
-          <span className="prefix">$</span>
-          <input
-            type="number"
-            className="input-lg"
-            value={dcaMonthly}
-            onChange={(e) => onDcaMonthlyChange(e.target.value === '' ? 0 : Number(e.target.value))}
-            onFocus={(e) => { if (Number(e.target.value) === 0) e.target.value = ''; }}
-            onBlur={(e) => { if (e.target.value === '') onDcaMonthlyChange(0); }}
-            min="0"
-            step="50"
-          />
-        </div>
+        <input
+          type="number"
+          className="input-lg"
+          value={dcaMonthly}
+          onChange={(e) => onDcaMonthlyChange(e.target.value === '' ? 0 : Number(e.target.value))}
+          onFocus={(e) => { if (Number(e.target.value) === 0) e.target.value = ''; }}
+          onBlur={(e) => { if (e.target.value === '') onDcaMonthlyChange(0); }}
+          min="0"
+          step="50"
+        />
         <input
           type="range"
           min="0"
