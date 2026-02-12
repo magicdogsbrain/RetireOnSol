@@ -32,7 +32,7 @@ release:
       uri: android/assets/promo-4-drawdown.png
   files:
     - purpose: install
-      uri: android/RetireOnSol-v3.5.6.apk
+      uri: android/RetireOnSol-v3.5.7.apk
   catalog:
     en-US:
       name: RetireOnSol
@@ -53,13 +53,13 @@ release:
         WALLET: Connect via Seed Vault using native Mobile Wallet Adapter (MWA). Wallet connection persists across app restarts. Import your live SOL balance directly into projections.
 
         ADDITIONAL FEATURES: Editable slider values (tap any number to type exact amounts). Live SOL price with auto-refresh. JitoSOL staking yield factored into returns. Inflation-adjusted projections (configurable rate). Shareable projection images. Biometric lock (fingerprint/face) for privacy. Push notifications for DCA reminders and price alerts. Dark theme optimized for OLED.
-      new_in_version: V3.5.6 — Complete native rebuild for Seeker. Basic mode for quick projections. Seeker-only leaderboard with auto-submit scoring via .skr ID. Native MWA wallet connection for Seed Vault (no redirects). Editable slider values — tap to type exact numbers. Wallet connection persistence across restarts. DCA monitoring with push notifications. SOL price alerts. Biometric lock. JitoSOL staking yield. Improved wallet UI across all screens.
+      new_in_version: V3.5.7 — Complete native rebuild for Seeker. Basic mode for quick projections. Seeker-only leaderboard with auto-submit scoring via .skr ID. Native MWA wallet connection for Seed Vault (no redirects). Editable slider values — tap to type exact numbers. Wallet connection persistence across restarts. DCA monitoring with push notifications. SOL price alerts. Biometric lock. JitoSOL staking yield. Improved wallet UI across all screens.
       saga_features: ''
   android_details:
     cert_fingerprint: 3bd5b43f164af14eaed5845062205470c9292971e18fc8190bacdeafeee04091
     min_sdk: 24
-    version: 3.5.6
-    version_code: 13
+    version: 3.5.7
+    version_code: 14
     locales:
       - en-US
 solana_mobile_dapp_publisher_portal:

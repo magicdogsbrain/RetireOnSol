@@ -42,28 +42,33 @@
     },
     "android/assets/promo-1-grow.png": {
       "path": "android/assets/promo-1-grow.png",
-      "sha256": "3IlybZfTJw9uUHThvKNNwARJVxc8p3kAkizBcUK4Yhw=",
-      "uri": "https://arweave.net/0Cgob5Lqc36wWt5ex7bPkuKn20QomAagOXFcbHiSVZ4"
+      "sha256": "XzLzaqXDBH57Ttta2Ts4aEXlkWb6xTBBzkrk8DVO2ZM=",
+      "uri": "https://arweave.net/khMAdNI6SG8944JIFmsk6H4qmI7hDve2AhBg947XZ8w"
     },
     "android/assets/promo-2-results.png": {
       "path": "android/assets/promo-2-results.png",
-      "sha256": "nb0iWn3JO8/kjzqDfezA7esiU2UDyk21pMV4SRom+iE=",
-      "uri": "https://arweave.net/F5wrS2onGbJDDgtJluq8TSRrWxtxROCt9sQky-w1uLo"
+      "sha256": "gtdBUWCRf6JEaQ2HInJiMv9ajye5tF25EgNHdEa1R1I=",
+      "uri": "https://arweave.net/QTNrLv7fjlmzMppSf2K2nl73BklO3irX495mIWQ-Mvs"
     },
     "android/assets/promo-3-spend.png": {
       "path": "android/assets/promo-3-spend.png",
-      "sha256": "lt+a0FPLy7974GGBVUmhPg9wyvO4Zye2tOFRXpweHvQ=",
-      "uri": "https://arweave.net/IcMI_h_S37yfwB9T3RRVO5Amm1YFSeZ5JE7Wh9Jx5TY"
+      "sha256": "hpEp5DnwagJSsMFfAD0OtZx4RkYaozgzcDAq2oUglYg=",
+      "uri": "https://arweave.net/WSFU3C5ivscrxjR5s6oIXFwmJNG2qkGZqQSnXuIac8s"
     },
     "android/assets/promo-4-drawdown.png": {
       "path": "android/assets/promo-4-drawdown.png",
-      "sha256": "jGjr8uvX4ps2bxDCHaXdphIv2ls7SihY6e/zBVCBSac=",
-      "uri": "https://arweave.net/3HQ5APxUBGYqDFdI0_NtwItDjmZQbXLnswuN526VhR0"
+      "sha256": "rGNIi2JTAXI8iBihhmLacb4E1x5pTKwipxOD8tzlGCw=",
+      "uri": "https://arweave.net/FCQcgYxkhhKjZs5LnbhrO1-cdbka_4od8ZukMqYfgeE"
     },
     "android/RetireOnSol-v2.0.4.apk": {
       "path": "android/RetireOnSol-v2.0.4.apk",
       "sha256": "Te6+ol6mDffP5C2cewkeyrmaUGhbfRrlFh3oSZ2wUcY=",
       "uri": "https://arweave.net/_4Y5i-U5n1LcF7gEEdLn6SRyabjIXnim9VBJpYUNwVg"
+    },
+    "android/RetireOnSol-v3.5.6.apk": {
+      "path": "android/RetireOnSol-v3.5.6.apk",
+      "sha256": "rST8biASplgZuUNtS14Y3mPPstiFfiQTlWgpUH0dU04=",
+      "uri": "https://arweave.net/ZYLZezMO44T6sc0jZ1RwMBY05kqa609PxaU25e0k8AE"
     }
   }
 }
