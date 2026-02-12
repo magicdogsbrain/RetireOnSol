@@ -16,7 +16,7 @@ app:
     - purpose: icon
       uri: android/assets/icon-512.png
 release:
-  address: GxqYqfyzMjWuUkTEDDcZqLcW2rUK4doimhYyJGsxmk3B
+  address: 582wFwDMKFjrBw3mX48jrijjNXVLB3KbDM2qTF77pUmQ
   media:
     - purpose: icon
       uri: android/assets/icon-512.png
@@ -66,8 +66,8 @@ solana_mobile_dapp_publisher_portal:
   google_store_package: ''
   testing_instructions: Open the app. Basic mode — adjust SOL holdings, DCA, years, and withdrawal sliders to see projections (tap values to type exact numbers). Switch to Advanced mode for full planning. In Advanced GROW tab — configure growth model (CAGR/Power Law/S-Curve), enable Monte Carlo, set DCA frequency, connect wallet to import balances. Click Execute Plan to activate monitoring. SPEND tab — see drawdown simulations from Grow results. MONITOR tab — view DCA schedule, funding status, and progress. LEADERBOARD tab — connect Seeker Vault wallet (.skr), join the leaderboard, score auto-updates every hour. Connect wallet via Seed Vault (choose Seed Vault when wallet chooser appears — uses native MWA). Close and reopen the app to verify wallet connection persists. Test biometric lock by backgrounding and reopening.
 lastSubmittedVersionOnChain:
-  address: GxqYqfyzMjWuUkTEDDcZqLcW2rUK4doimhYyJGsxmk3B
-  version_code: 13
-  apk_hash: rST8biASplgZuUNtS14Y3mPPstiFfiQTlWgpUH0dU04=
+  address: 582wFwDMKFjrBw3mX48jrijjNXVLB3KbDM2qTF77pUmQ
+  version_code: 14
+  apk_hash: kc9otJx2yWOCDO5aUo3A2QlK34XqbvRXhC75dzyk1NQ=
 lastUpdatedVersionOnStore:
-  address: GxqYqfyzMjWuUkTEDDcZqLcW2rUK4doimhYyJGsxmk3B
+  address: 582wFwDMKFjrBw3mX48jrijjNXVLB3KbDM2qTF77pUmQ
